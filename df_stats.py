@@ -1,8 +1,11 @@
 import pandas as pd
 import json
+import matplotlib
 import matplotlib.pyplot as plt
 
-with open('speedtest.json') as f:
+matplotlib.style.use('dark_background')
+
+with open('c:\localapp\logs\speedtest.json') as f:
     content = [json.loads(line.rstrip('\n')) for line in f]
 
 df_dict = []
